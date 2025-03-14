@@ -29,8 +29,7 @@ jobs:
       - name: Run tests
         run: |
           cd frontend
-          echo "Run tests"
-#          npm run test:ci
+          npm test
 
       - name: Build the project
         run: |
