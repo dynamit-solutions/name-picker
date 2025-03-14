@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94e36fac-be12-47bc-8cf0-4de808a7f077" name="Changes" comment="Update backend cicd config">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="94e36fac-be12-47bc-8cf0-4de808a7f077" name="Changes" comment="Add frontend tests to ci cd">
       <change afterPath="$PROJECT_DIR$/backend/src/main/java/com/namepicker/backend/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.editorconfig" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.vscode/extensions.json" beforeDir="false" />
@@ -16,12 +16,18 @@
       <change beforePath="$PROJECT_DIR$/frontend/angular.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app-routing.module.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.spec.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.routes.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.module.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/name/name.component.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/name/name.component.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/name/name.component.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/name/name.component.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/name.service.spec.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/name.service.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/assets/.gitkeep" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/favicon.ico" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/index.html" beforeDir="false" />
@@ -71,6 +77,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Karma.NameComponent.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
@@ -86,7 +93,20 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Karma.NameComponent">
+    <configuration name="NameComponent" type="JavaScriptTestRunnerKarma" temporary="true" nameIsGenerated="true">
+      <config-file value="" />
+      <karma-package-dir value="$PROJECT_DIR$/frontend/node_modules/@angular/cli" />
+      <working-directory value="$PROJECT_DIR$" />
+      <node-interpreter value="project" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file-path value="$PROJECT_DIR$/frontend/src/app/components/name/name.component.spec.ts" />
+      <test-names>
+        <test-name value="NameComponent" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="NamePickerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="name-picker" />
@@ -95,6 +115,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Karma.NameComponent" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -105,7 +130,7 @@
       <option name="presentableId" value="Default" />
       <updated>1741958170329</updated>
       <workItem from="1741958171375" duration="437000" />
-      <workItem from="1741958713140" duration="6638000" />
+      <workItem from="1741958713140" duration="9317000" />
     </task>
     <task id="LOCAL-00001" summary="Add initial app with frontend">
       <option name="closed" value="true" />
@@ -155,7 +180,39 @@
       <option name="project" value="LOCAL" />
       <updated>1741961884573</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Create new frontend with not standalone setting and show names">
+      <option name="closed" value="true" />
+      <created>1741965503005</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1741965503005</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Add frontend config">
+      <option name="closed" value="true" />
+      <created>1741965524760</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1741965524760</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Update angular tests">
+      <option name="closed" value="true" />
+      <created>1741967742989</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1741967742989</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Add frontend tests to ci cd">
+      <option name="closed" value="true" />
+      <created>1741967847566</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1741967847566</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -169,6 +226,10 @@
     <MESSAGE value="Add backend cicd configuration" />
     <MESSAGE value="Add name controller unit test" />
     <MESSAGE value="Update backend cicd config" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update backend cicd config" />
+    <MESSAGE value="Create new frontend with not standalone setting and show names" />
+    <MESSAGE value="Add frontend config" />
+    <MESSAGE value="Update angular tests" />
+    <MESSAGE value="Add frontend tests to ci cd" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add frontend tests to ci cd" />
   </component>
 </project>
