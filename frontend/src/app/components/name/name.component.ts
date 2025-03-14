@@ -7,13 +7,13 @@ import {NameService} from "../../services/name.service";
   styleUrl: './name.component.scss'
 })
 export class NameComponent implements OnInit {
-  names: string[] = [];  // Array to store the fetched names
+  names: string[] = [];
 
-  constructor(private nameService: NameService) {}  // Inject the service into the component
+  constructor(private nameService: NameService) {}
 
   ngOnInit(): void {
     this.nameService.getNames().subscribe((names) => {
-      this.names = names;  // Store the names returned from the service
+      this.names = names;
     });
   }
 }

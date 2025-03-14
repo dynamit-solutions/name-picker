@@ -1,4 +1,3 @@
-// src/app/services/name.service.ts
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
@@ -8,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class NameService {
 
-  private apiUrl = 'http://localhost:8080/api/names'; // Backend URL
+  private apiUrl = 'http://localhost:8080/api/names';
 
   constructor(private http: HttpClient) {}
 

@@ -9,12 +9,13 @@ import {NameComponent} from "./components/name/name.component";
 @NgModule({
   declarations: [
     AppComponent,
-    NameComponent
+    NameComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]
