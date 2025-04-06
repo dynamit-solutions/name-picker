@@ -16,4 +16,11 @@ export class NameComponent implements OnInit {
       this.names = names;
     });
   }
+
+  sendNames(selectedName: string, names: string[]) {
+    this.nameService.postNames(selectedName, names)
+      .subscribe(response => {
+      console.log('Response from backend:', response);
+    });
+  }
 }

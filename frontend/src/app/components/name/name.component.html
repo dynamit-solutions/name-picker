@@ -1,6 +1,8 @@
 <div>
-  <h1>Names:</h1>
-  <ul>
-    <li *ngFor="let name of names">{{ name }}</li>
-  </ul>
+    <h1>Names:</h1>
+    <button *ngFor="let name of names"
+            (click)="sendNames(name, names)"
+            class="btn btn-light">
+        {{ name }}
+    </button>
 </div>
