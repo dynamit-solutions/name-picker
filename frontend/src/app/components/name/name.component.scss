@@ -1,0 +1,52 @@
+.name-grid-container {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.name-grid {
+    flex: 1;
+    display: grid;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+}
+
+.name-button {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.name-text {
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transform: scale(var(--scale, 1));
+    transform-origin: center;
+    white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+    .name-grid-container {
+        width: 70vw;
+        height: 70vh;
+    }
+  
+    .name-text {
+      font-size: 1.5rem;
+    }
+}

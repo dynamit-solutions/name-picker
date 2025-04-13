@@ -1,8 +1,14 @@
-<div>
-    <h1>Names:</h1>
-    <button *ngFor="let name of names"
-            (click)="sendNames(name, names)"
-            class="btn btn-light">
-        {{ name }}
-    </button>
+<div class="d-flex justify-content-center align-items-center vh-100">
+    <div class="name-grid-container" [style.height]="containerHeight">
+        <h1 class="text-white display-4 text-center mb-4">Pick your favourite name:</h1>
+        <div class="name-grid" [ngStyle]="gridStyle">
+            <button *ngFor="let name of shuffledNames"
+                    (click)="sendNames(name, names)"
+                    class="btn btn-light name-button semi-transparent">
+                <span class="name-text" [ngStyle]="getScaledStyle(name)">
+                    {{ name }}
+                </span>
+            </button>
+        </div>
+    </div>
 </div>

@@ -18,7 +18,7 @@ public class NameController {
 
     @GetMapping("/names")
     public List<String> getNames() {
-        return List.of("Alice", "Bob", "Charlie");
+        return List.of("Alice", "Bob", "Christopher", "Dorothy", "Erica", "Frank", "Georgina long name");
     }
 
     @PostMapping("/names")
